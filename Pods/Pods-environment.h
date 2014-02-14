@@ -66,6 +66,12 @@
 #define COCOAPODS_VERSION_MINOR_NSString_Hashes 2
 #define COCOAPODS_VERSION_PATCH_NSString_Hashes 1
 
+// NSURL+QueryDictionary
+#define COCOAPODS_POD_AVAILABLE_NSURL_QueryDictionary
+#define COCOAPODS_VERSION_MAJOR_NSURL_QueryDictionary 0
+#define COCOAPODS_VERSION_MINOR_NSURL_QueryDictionary 0
+#define COCOAPODS_VERSION_PATCH_NSURL_QueryDictionary 5
+
 // ReactiveCocoa
 #define COCOAPODS_POD_AVAILABLE_ReactiveCocoa
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa 2
@@ -83,4 +89,10 @@
 #define COCOAPODS_VERSION_MAJOR_ReactiveCocoa_no_arc 2
 #define COCOAPODS_VERSION_MINOR_ReactiveCocoa_no_arc 2
 #define COCOAPODS_VERSION_PATCH_ReactiveCocoa_no_arc 3
+
+// SVProgressHUD
+#define COCOAPODS_POD_AVAILABLE_SVProgressHUD
+#define COCOAPODS_VERSION_MAJOR_SVProgressHUD 1
+#define COCOAPODS_VERSION_MINOR_SVProgressHUD 0
+#define COCOAPODS_VERSION_PATCH_SVProgressHUD 0
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>460697BB-5548-403D-B554-49367AEA2D6E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LRLDataService</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>674AA012-A491-4C48-8AE8-86DDDBC8C1BC</key>
+		<string>ssh://github.com/lawrencelomax/LRLDataService.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LRLDataService.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>674AA012-A491-4C48-8AE8-86DDDBC8C1BC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/lawrencelomax/LRLDataService.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>674AA012-A491-4C48-8AE8-86DDDBC8C1BC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>674AA012-A491-4C48-8AE8-86DDDBC8C1BC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LRLDataService</string>
+		</dict>
+	</array>
+</dict>
+</plist>

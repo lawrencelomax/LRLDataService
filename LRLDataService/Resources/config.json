@@ -1,3 +1,8 @@
 {
-  "imdb_endpoint" : "http://www.omdbapi.com/"
+  	"config_endpoint" : "http://rawgithub.com/lawrencelomax/LRLDataService/master/LRLDataService/Resources/config.json",
+	"imdb_endpoint" : "http://www.omdbapi.com/",
+	"traileraddict_endpoint" : "http://api.traileraddict.com/",
+	"rottentomatoes_endpoint" : "http://api.rottentomatoes.com/api/public/v1.0/",
+	"tvdb_apikey" : "9522ADB55C137B4A",
+	"rottentomatoes_apikey" : "fmhed75xcba3kbkbw5ngdkav"
 }

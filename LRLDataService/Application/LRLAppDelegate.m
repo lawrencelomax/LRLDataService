@@ -8,11 +8,24 @@
 
 #import "LRLAppDelegate.h"
 
+#import "LRLConfigurationService.h"
+#import "LRLMovieService.h"
+#import "LRLMovieListViewController.h"
+
 @implementation LRLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+	LRLConfigurationService *configService = [LRLConfigurationService dataService];
+	LRLMovieService *movieService = [LRLMovieService serviceWithConfigurationService:configService];
+	
+	LRLMovieListViewController *viewController = [LRLMovieListViewController viewControllerWithService:movieService];
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+	
+	self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+	self.window.rootViewController = navigationController;
+	[self.window makeKeyAndVisible];
+	
     return YES;
 }
 							

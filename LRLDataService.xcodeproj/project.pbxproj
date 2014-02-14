@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		210095F118A7550B002ACBC5 /* LRLMessageBusDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 210095F018A7550B002ACBC5 /* LRLMessageBusDataProvider.m */; };
+		211D9A6C18B22EC800D97C95 /* LRLResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 211D9A6B18B22EC800D97C95 /* LRLResponseSerializer.m */; };
+		211D9A6F18B2C11700D97C95 /* LRLBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 211D9A6E18B2C11700D97C95 /* LRLBaseModel.m */; };
 		21421600189A59BD0036767C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214215FF189A59BD0036767C /* Foundation.framework */; };
 		21421602189A59BD0036767C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21421601189A59BD0036767C /* CoreGraphics.framework */; };
 		21421604189A59BD0036767C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21421603189A59BD0036767C /* UIKit.framework */; };
@@ -20,19 +21,28 @@
 		2142162C189A59BD0036767C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2142162A189A59BD0036767C /* InfoPlist.strings */; };
 		2142162E189A59BD0036767C /* LRLDataServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142162D189A59BD0036767C /* LRLDataServiceTests.m */; };
 		21421640189AFD2E0036767C /* LRLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142163A189AFD2E0036767C /* LRLAppDelegate.m */; };
-		21421641189AFD2E0036767C /* LRLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142163F189AFD2E0036767C /* LRLViewController.m */; };
-		21421645189AFFA70036767C /* LRLHTTPDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 21421644189AFFA70036767C /* LRLHTTPDataProvider.m */; };
-		21421648189B01D10036767C /* LRLFileStorageDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 21421647189B01D10036767C /* LRLFileStorageDataProvider.m */; };
-		2142164B189B027A0036767C /* LRLDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142164A189B027A0036767C /* LRLDataFetcher.m */; };
+		21421641189AFD2E0036767C /* LRLMovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142163F189AFD2E0036767C /* LRLMovieListViewController.m */; };
+		2198C4C618B37039001EC26D /* LRLRottenTomatoesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2198C4C518B37039001EC26D /* LRLRottenTomatoesService.m */; };
 		21ABD34718A8D295002C15DA /* LRLKeyValueInterchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD34618A8D295002C15DA /* LRLKeyValueInterchange.m */; };
 		21ABD34A18A8D719002C15DA /* LRLURLHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD34918A8D719002C15DA /* LRLURLHelpers.m */; };
 		21ABD34E18A8DBD5002C15DA /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = 21ABD34D18A8DBD5002C15DA /* config.json */; };
-		21ABD35218A8DC4C002C15DA /* LRLServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD35118A8DC4C002C15DA /* LRLServiceConfiguration.m */; };
-		21ABD35518A8DCD4002C15DA /* LRLConfigurationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD35418A8DCD4002C15DA /* LRLConfigurationService.m */; };
-		21ABD35818A8DE27002C15DA /* LRLIMDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD35718A8DE27002C15DA /* LRLIMDBService.m */; };
-		21ABD35B18A8E07A002C15DA /* LRLTheTVDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD35A18A8E07A002C15DA /* LRLTheTVDBService.m */; };
-		21ABD35E18A8E097002C15DA /* LRLConfiguredDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD35D18A8E097002C15DA /* LRLConfiguredDataService.m */; };
-		21D76B7018A0E21D00C86A58 /* LRLDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D76B6F18A0E21D00C86A58 /* LRLDataService.m */; };
+		21ABD35218A8DC4C002C15DA /* LRLConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 21ABD35118A8DC4C002C15DA /* LRLConfiguration.m */; };
+		21BC38A018AA49F600EA9215 /* LRLDataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC388D18AA49F600EA9215 /* LRLDataFetcher.m */; };
+		21BC38A118AA49F600EA9215 /* LRLDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389018AA49F600EA9215 /* LRLDataService.m */; };
+		21BC38A218AA49F600EA9215 /* LRLFileStorageDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389218AA49F600EA9215 /* LRLFileStorageDataProvider.m */; };
+		21BC38A318AA49F600EA9215 /* LRLHTTPDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389418AA49F600EA9215 /* LRLHTTPDataProvider.m */; };
+		21BC38A418AA49F600EA9215 /* LRLMessageBusDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389618AA49F600EA9215 /* LRLMessageBusDataProvider.m */; };
+		21BC38A518AA49F600EA9215 /* LRLConfigurationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389918AA49F600EA9215 /* LRLConfigurationService.m */; };
+		21BC38A618AA49F600EA9215 /* LRLConfiguredDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389B18AA49F600EA9215 /* LRLConfiguredDataService.m */; };
+		21BC38A718AA49F600EA9215 /* LRLIMDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389D18AA49F600EA9215 /* LRLIMDBService.m */; };
+		21BC38AB18AA4A1500EA9215 /* LRLMovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC38AA18AA4A1500EA9215 /* LRLMovieService.m */; };
+		21BC38AE18AA4B7000EA9215 /* LRLMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC38AD18AA4B7000EA9215 /* LRLMovie.m */; };
+		21D85B9818AF279900A3279D /* RACSignal+LRLOperatons.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85B9718AF279900A3279D /* RACSignal+LRLOperatons.m */; };
+		21D85BA018AF2F4B00A3279D /* LRLComposedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85B9F18AF2F4B00A3279D /* LRLComposedTableViewDataSource.m */; };
+		21D85BA418AF746D00A3279D /* LRLMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85BA218AF746D00A3279D /* LRLMovieViewController.m */; };
+		21D85BA518AF746D00A3279D /* LRLMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D85BA318AF746D00A3279D /* LRLMovieViewController.xib */; };
+		21D85BA818B02D0E00A3279D /* LRLTrailerAddictService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85BA718B02D0E00A3279D /* LRLTrailerAddictService.m */; };
+		21D85BAB18B05D3300A3279D /* LRLTrailer.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85BAA18B05D3300A3279D /* LRLTrailer.m */; };
 		5ECAFF3E98D9465CBE3F080C /* libPods-LRLDataServiceTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F24580EDB3049B99BEA88D9 /* libPods-LRLDataServiceTests.a */; };
 		82E9BB5A631C4F32B7CF34AA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6609C506EFC34A2585FFB221 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -49,8 +59,10 @@
 
 /* Begin PBXFileReference section */
 		16AC8CE9FAF24D87BD093567 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		210095EF18A7550B002ACBC5 /* LRLMessageBusDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMessageBusDataProvider.h; sourceTree = "<group>"; };
-		210095F018A7550B002ACBC5 /* LRLMessageBusDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMessageBusDataProvider.m; sourceTree = "<group>"; };
+		211D9A6A18B22EC800D97C95 /* LRLResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLResponseSerializer.h; sourceTree = "<group>"; };
+		211D9A6B18B22EC800D97C95 /* LRLResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLResponseSerializer.m; sourceTree = "<group>"; };
+		211D9A6D18B2C11700D97C95 /* LRLBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLBaseModel.h; sourceTree = "<group>"; };
+		211D9A6E18B2C11700D97C95 /* LRLBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLBaseModel.m; sourceTree = "<group>"; };
 		214215FC189A59BD0036767C /* LRLDataService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LRLDataService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214215FF189A59BD0036767C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		21421601189A59BD0036767C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -67,32 +79,49 @@
 		2142162D189A59BD0036767C /* LRLDataServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LRLDataServiceTests.m; sourceTree = "<group>"; };
 		21421639189AFD2E0036767C /* LRLAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLAppDelegate.h; sourceTree = "<group>"; };
 		2142163A189AFD2E0036767C /* LRLAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLAppDelegate.m; sourceTree = "<group>"; };
-		2142163E189AFD2E0036767C /* LRLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLViewController.h; sourceTree = "<group>"; };
-		2142163F189AFD2E0036767C /* LRLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLViewController.m; sourceTree = "<group>"; };
-		21421642189AFF840036767C /* LRLDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRLDataProvider.h; sourceTree = "<group>"; };
-		21421643189AFFA70036767C /* LRLHTTPDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLHTTPDataProvider.h; sourceTree = "<group>"; };
-		21421644189AFFA70036767C /* LRLHTTPDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLHTTPDataProvider.m; sourceTree = "<group>"; };
-		21421646189B01D10036767C /* LRLFileStorageDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLFileStorageDataProvider.h; sourceTree = "<group>"; };
-		21421647189B01D10036767C /* LRLFileStorageDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLFileStorageDataProvider.m; sourceTree = "<group>"; };
-		21421649189B027A0036767C /* LRLDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLDataFetcher.h; sourceTree = "<group>"; };
-		2142164A189B027A0036767C /* LRLDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLDataFetcher.m; sourceTree = "<group>"; };
+		2142163E189AFD2E0036767C /* LRLMovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovieListViewController.h; sourceTree = "<group>"; };
+		2142163F189AFD2E0036767C /* LRLMovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovieListViewController.m; sourceTree = "<group>"; };
+		2198C4C418B37039001EC26D /* LRLRottenTomatoesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLRottenTomatoesService.h; sourceTree = "<group>"; };
+		2198C4C518B37039001EC26D /* LRLRottenTomatoesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLRottenTomatoesService.m; sourceTree = "<group>"; };
 		21ABD34518A8D295002C15DA /* LRLKeyValueInterchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLKeyValueInterchange.h; sourceTree = "<group>"; };
 		21ABD34618A8D295002C15DA /* LRLKeyValueInterchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLKeyValueInterchange.m; sourceTree = "<group>"; };
 		21ABD34818A8D719002C15DA /* LRLURLHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLURLHelpers.h; sourceTree = "<group>"; };
 		21ABD34918A8D719002C15DA /* LRLURLHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLURLHelpers.m; sourceTree = "<group>"; };
 		21ABD34D18A8DBD5002C15DA /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
-		21ABD35018A8DC4C002C15DA /* LRLServiceConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLServiceConfiguration.h; sourceTree = "<group>"; };
-		21ABD35118A8DC4C002C15DA /* LRLServiceConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLServiceConfiguration.m; sourceTree = "<group>"; };
-		21ABD35318A8DCD4002C15DA /* LRLConfigurationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLConfigurationService.h; sourceTree = "<group>"; };
-		21ABD35418A8DCD4002C15DA /* LRLConfigurationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLConfigurationService.m; sourceTree = "<group>"; };
-		21ABD35618A8DE27002C15DA /* LRLIMDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLIMDBService.h; sourceTree = "<group>"; };
-		21ABD35718A8DE27002C15DA /* LRLIMDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLIMDBService.m; sourceTree = "<group>"; };
-		21ABD35918A8E07A002C15DA /* LRLTheTVDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLTheTVDBService.h; sourceTree = "<group>"; };
-		21ABD35A18A8E07A002C15DA /* LRLTheTVDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLTheTVDBService.m; sourceTree = "<group>"; };
-		21ABD35C18A8E097002C15DA /* LRLConfiguredDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLConfiguredDataService.h; sourceTree = "<group>"; };
-		21ABD35D18A8E097002C15DA /* LRLConfiguredDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLConfiguredDataService.m; sourceTree = "<group>"; };
-		21D76B6E18A0E21D00C86A58 /* LRLDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLDataService.h; sourceTree = "<group>"; };
-		21D76B6F18A0E21D00C86A58 /* LRLDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLDataService.m; sourceTree = "<group>"; };
+		21ABD35018A8DC4C002C15DA /* LRLConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLConfiguration.h; sourceTree = "<group>"; };
+		21ABD35118A8DC4C002C15DA /* LRLConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLConfiguration.m; sourceTree = "<group>"; };
+		21BC388C18AA49F600EA9215 /* LRLDataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLDataFetcher.h; sourceTree = "<group>"; };
+		21BC388D18AA49F600EA9215 /* LRLDataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLDataFetcher.m; sourceTree = "<group>"; };
+		21BC388E18AA49F600EA9215 /* LRLDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLDataProvider.h; sourceTree = "<group>"; };
+		21BC388F18AA49F600EA9215 /* LRLDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLDataService.h; sourceTree = "<group>"; };
+		21BC389018AA49F600EA9215 /* LRLDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLDataService.m; sourceTree = "<group>"; };
+		21BC389118AA49F600EA9215 /* LRLFileStorageDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLFileStorageDataProvider.h; sourceTree = "<group>"; };
+		21BC389218AA49F600EA9215 /* LRLFileStorageDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLFileStorageDataProvider.m; sourceTree = "<group>"; };
+		21BC389318AA49F600EA9215 /* LRLHTTPDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLHTTPDataProvider.h; sourceTree = "<group>"; };
+		21BC389418AA49F600EA9215 /* LRLHTTPDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLHTTPDataProvider.m; sourceTree = "<group>"; };
+		21BC389518AA49F600EA9215 /* LRLMessageBusDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMessageBusDataProvider.h; sourceTree = "<group>"; };
+		21BC389618AA49F600EA9215 /* LRLMessageBusDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMessageBusDataProvider.m; sourceTree = "<group>"; };
+		21BC389818AA49F600EA9215 /* LRLConfigurationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLConfigurationService.h; sourceTree = "<group>"; };
+		21BC389918AA49F600EA9215 /* LRLConfigurationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLConfigurationService.m; sourceTree = "<group>"; };
+		21BC389A18AA49F600EA9215 /* LRLConfiguredDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLConfiguredDataService.h; sourceTree = "<group>"; };
+		21BC389B18AA49F600EA9215 /* LRLConfiguredDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLConfiguredDataService.m; sourceTree = "<group>"; };
+		21BC389C18AA49F600EA9215 /* LRLIMDBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLIMDBService.h; sourceTree = "<group>"; };
+		21BC389D18AA49F600EA9215 /* LRLIMDBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLIMDBService.m; sourceTree = "<group>"; };
+		21BC38A918AA4A1500EA9215 /* LRLMovieService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovieService.h; sourceTree = "<group>"; };
+		21BC38AA18AA4A1500EA9215 /* LRLMovieService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovieService.m; sourceTree = "<group>"; };
+		21BC38AC18AA4B7000EA9215 /* LRLMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovie.h; sourceTree = "<group>"; };
+		21BC38AD18AA4B7000EA9215 /* LRLMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovie.m; sourceTree = "<group>"; };
+		21D85B9618AF279900A3279D /* RACSignal+LRLOperatons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+LRLOperatons.h"; sourceTree = "<group>"; };
+		21D85B9718AF279900A3279D /* RACSignal+LRLOperatons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+LRLOperatons.m"; sourceTree = "<group>"; };
+		21D85B9E18AF2F4B00A3279D /* LRLComposedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLComposedTableViewDataSource.h; sourceTree = "<group>"; };
+		21D85B9F18AF2F4B00A3279D /* LRLComposedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLComposedTableViewDataSource.m; sourceTree = "<group>"; };
+		21D85BA118AF746D00A3279D /* LRLMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovieViewController.h; sourceTree = "<group>"; };
+		21D85BA218AF746D00A3279D /* LRLMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovieViewController.m; sourceTree = "<group>"; };
+		21D85BA318AF746D00A3279D /* LRLMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRLMovieViewController.xib; sourceTree = "<group>"; };
+		21D85BA618B02D0E00A3279D /* LRLTrailerAddictService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLTrailerAddictService.h; sourceTree = "<group>"; };
+		21D85BA718B02D0E00A3279D /* LRLTrailerAddictService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLTrailerAddictService.m; sourceTree = "<group>"; };
+		21D85BA918B05D3300A3279D /* LRLTrailer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLTrailer.h; sourceTree = "<group>"; };
+		21D85BAA18B05D3300A3279D /* LRLTrailer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLTrailer.m; sourceTree = "<group>"; };
 		6609C506EFC34A2585FFB221 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F24580EDB3049B99BEA88D9 /* libPods-LRLDataServiceTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LRLDataServiceTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E367BF774675418A9DD7A620 /* Pods-LRLDataServiceTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LRLDataServiceTests.xcconfig"; path = "Pods/Pods-LRLDataServiceTests.xcconfig"; sourceTree = "<group>"; };
@@ -165,8 +194,10 @@
 				21ABD34418A8D187002C15DA /* Helpers */,
 				2142161A189A59BD0036767C /* Images.xcassets */,
 				21ABD34F18A8DBF4002C15DA /* Models */,
+				2151264818AF155800734D08 /* RAC */,
 				21ABD34C18A8DB81002C15DA /* Resources */,
-				2142163B189AFD2E0036767C /* Service */,
+				21BC388A18AA49F600EA9215 /* Service */,
+				21D85B9D18AF2F4100A3279D /* ViewConfiguration */,
 				21421606189A59BD0036767C /* Supporting Files */,
 				2142163D189AFD2E0036767C /* ViewControllers */,
 			);
@@ -211,39 +242,25 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		2142163B189AFD2E0036767C /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				21ABD35318A8DCD4002C15DA /* LRLConfigurationService.h */,
-				21ABD35418A8DCD4002C15DA /* LRLConfigurationService.m */,
-				21ABD35C18A8E097002C15DA /* LRLConfiguredDataService.h */,
-				21ABD35D18A8E097002C15DA /* LRLConfiguredDataService.m */,
-				21421649189B027A0036767C /* LRLDataFetcher.h */,
-				2142164A189B027A0036767C /* LRLDataFetcher.m */,
-				21421642189AFF840036767C /* LRLDataProvider.h */,
-				21D76B6E18A0E21D00C86A58 /* LRLDataService.h */,
-				21D76B6F18A0E21D00C86A58 /* LRLDataService.m */,
-				21421646189B01D10036767C /* LRLFileStorageDataProvider.h */,
-				21421647189B01D10036767C /* LRLFileStorageDataProvider.m */,
-				21421643189AFFA70036767C /* LRLHTTPDataProvider.h */,
-				21421644189AFFA70036767C /* LRLHTTPDataProvider.m */,
-				21ABD35618A8DE27002C15DA /* LRLIMDBService.h */,
-				21ABD35718A8DE27002C15DA /* LRLIMDBService.m */,
-				210095EF18A7550B002ACBC5 /* LRLMessageBusDataProvider.h */,
-				210095F018A7550B002ACBC5 /* LRLMessageBusDataProvider.m */,
-				21ABD35918A8E07A002C15DA /* LRLTheTVDBService.h */,
-				21ABD35A18A8E07A002C15DA /* LRLTheTVDBService.m */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		2142163D189AFD2E0036767C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2142163E189AFD2E0036767C /* LRLViewController.h */,
-				2142163F189AFD2E0036767C /* LRLViewController.m */,
+				2142163E189AFD2E0036767C /* LRLMovieListViewController.h */,
+				2142163F189AFD2E0036767C /* LRLMovieListViewController.m */,
+				21D85BA118AF746D00A3279D /* LRLMovieViewController.h */,
+				21D85BA218AF746D00A3279D /* LRLMovieViewController.m */,
+				21D85BA318AF746D00A3279D /* LRLMovieViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2151264818AF155800734D08 /* RAC */ = {
+			isa = PBXGroup;
+			children = (
+				21D85B9618AF279900A3279D /* RACSignal+LRLOperatons.h */,
+				21D85B9718AF279900A3279D /* RACSignal+LRLOperatons.m */,
+			);
+			path = RAC;
 			sourceTree = "<group>";
 		};
 		21ABD34418A8D187002C15DA /* Helpers */ = {
@@ -268,10 +285,73 @@
 		21ABD34F18A8DBF4002C15DA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				21ABD35018A8DC4C002C15DA /* LRLServiceConfiguration.h */,
-				21ABD35118A8DC4C002C15DA /* LRLServiceConfiguration.m */,
+				211D9A6D18B2C11700D97C95 /* LRLBaseModel.h */,
+				211D9A6E18B2C11700D97C95 /* LRLBaseModel.m */,
+				21ABD35018A8DC4C002C15DA /* LRLConfiguration.h */,
+				21ABD35118A8DC4C002C15DA /* LRLConfiguration.m */,
+				21BC38AC18AA4B7000EA9215 /* LRLMovie.h */,
+				21BC38AD18AA4B7000EA9215 /* LRLMovie.m */,
+				21D85BA918B05D3300A3279D /* LRLTrailer.h */,
+				21D85BAA18B05D3300A3279D /* LRLTrailer.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		21BC388A18AA49F600EA9215 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				21BC388B18AA49F600EA9215 /* Infrastructure */,
+				21BC389718AA49F600EA9215 /* Services */,
+				211D9A6A18B22EC800D97C95 /* LRLResponseSerializer.h */,
+				211D9A6B18B22EC800D97C95 /* LRLResponseSerializer.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		21BC388B18AA49F600EA9215 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				21BC388C18AA49F600EA9215 /* LRLDataFetcher.h */,
+				21BC388D18AA49F600EA9215 /* LRLDataFetcher.m */,
+				21BC388E18AA49F600EA9215 /* LRLDataProvider.h */,
+				21BC388F18AA49F600EA9215 /* LRLDataService.h */,
+				21BC389018AA49F600EA9215 /* LRLDataService.m */,
+				21BC389118AA49F600EA9215 /* LRLFileStorageDataProvider.h */,
+				21BC389218AA49F600EA9215 /* LRLFileStorageDataProvider.m */,
+				21BC389318AA49F600EA9215 /* LRLHTTPDataProvider.h */,
+				21BC389418AA49F600EA9215 /* LRLHTTPDataProvider.m */,
+				21BC389518AA49F600EA9215 /* LRLMessageBusDataProvider.h */,
+				21BC389618AA49F600EA9215 /* LRLMessageBusDataProvider.m */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		21BC389718AA49F600EA9215 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21BC389818AA49F600EA9215 /* LRLConfigurationService.h */,
+				21BC389918AA49F600EA9215 /* LRLConfigurationService.m */,
+				21BC389A18AA49F600EA9215 /* LRLConfiguredDataService.h */,
+				21BC389B18AA49F600EA9215 /* LRLConfiguredDataService.m */,
+				21BC389C18AA49F600EA9215 /* LRLIMDBService.h */,
+				21BC389D18AA49F600EA9215 /* LRLIMDBService.m */,
+				21BC38A918AA4A1500EA9215 /* LRLMovieService.h */,
+				21BC38AA18AA4A1500EA9215 /* LRLMovieService.m */,
+				2198C4C418B37039001EC26D /* LRLRottenTomatoesService.h */,
+				2198C4C518B37039001EC26D /* LRLRottenTomatoesService.m */,
+				21D85BA618B02D0E00A3279D /* LRLTrailerAddictService.h */,
+				21D85BA718B02D0E00A3279D /* LRLTrailerAddictService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		21D85B9D18AF2F4100A3279D /* ViewConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				21D85B9E18AF2F4B00A3279D /* LRLComposedTableViewDataSource.h */,
+				21D85B9F18AF2F4B00A3279D /* LRLComposedTableViewDataSource.m */,
+			);
+			path = ViewConfiguration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +434,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21D85BA518AF746D00A3279D /* LRLMovieViewController.xib in Resources */,
 				2142161B189A59BD0036767C /* Images.xcassets in Resources */,
 				21ABD34E18A8DBD5002C15DA /* config.json in Resources */,
 				2142160A189A59BD0036767C /* InfoPlist.strings in Resources */,
@@ -438,21 +519,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2142164B189B027A0036767C /* LRLDataFetcher.m in Sources */,
-				21D76B7018A0E21D00C86A58 /* LRLDataService.m in Sources */,
+				21BC38A118AA49F600EA9215 /* LRLDataService.m in Sources */,
 				21ABD34718A8D295002C15DA /* LRLKeyValueInterchange.m in Sources */,
-				21421641189AFD2E0036767C /* LRLViewController.m in Sources */,
-				21ABD35218A8DC4C002C15DA /* LRLServiceConfiguration.m in Sources */,
+				21D85BA818B02D0E00A3279D /* LRLTrailerAddictService.m in Sources */,
+				21421641189AFD2E0036767C /* LRLMovieListViewController.m in Sources */,
+				211D9A6C18B22EC800D97C95 /* LRLResponseSerializer.m in Sources */,
+				21ABD35218A8DC4C002C15DA /* LRLConfiguration.m in Sources */,
+				21D85BA418AF746D00A3279D /* LRLMovieViewController.m in Sources */,
+				211D9A6F18B2C11700D97C95 /* LRLBaseModel.m in Sources */,
 				21ABD34A18A8D719002C15DA /* LRLURLHelpers.m in Sources */,
+				21BC38A418AA49F600EA9215 /* LRLMessageBusDataProvider.m in Sources */,
+				21BC38A718AA49F600EA9215 /* LRLIMDBService.m in Sources */,
+				21BC38AB18AA4A1500EA9215 /* LRLMovieService.m in Sources */,
+				21BC38AE18AA4B7000EA9215 /* LRLMovie.m in Sources */,
+				2198C4C618B37039001EC26D /* LRLRottenTomatoesService.m in Sources */,
 				2142160C189A59BD0036767C /* main.m in Sources */,
-				21ABD35818A8DE27002C15DA /* LRLIMDBService.m in Sources */,
-				210095F118A7550B002ACBC5 /* LRLMessageBusDataProvider.m in Sources */,
+				21BC38A018AA49F600EA9215 /* LRLDataFetcher.m in Sources */,
+				21BC38A618AA49F600EA9215 /* LRLConfiguredDataService.m in Sources */,
+				21BC38A318AA49F600EA9215 /* LRLHTTPDataProvider.m in Sources */,
+				21BC38A218AA49F600EA9215 /* LRLFileStorageDataProvider.m in Sources */,
 				21421640189AFD2E0036767C /* LRLAppDelegate.m in Sources */,
-				21ABD35B18A8E07A002C15DA /* LRLTheTVDBService.m in Sources */,
-				21421648189B01D10036767C /* LRLFileStorageDataProvider.m in Sources */,
-				21421645189AFFA70036767C /* LRLHTTPDataProvider.m in Sources */,
-				21ABD35518A8DCD4002C15DA /* LRLConfigurationService.m in Sources */,
-				21ABD35E18A8E097002C15DA /* LRLConfiguredDataService.m in Sources */,
+				21D85BAB18B05D3300A3279D /* LRLTrailer.m in Sources */,
+				21BC38A518AA49F600EA9215 /* LRLConfigurationService.m in Sources */,
+				21D85B9818AF279900A3279D /* RACSignal+LRLOperatons.m in Sources */,
+				21D85BA018AF2F4B00A3279D /* LRLComposedTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

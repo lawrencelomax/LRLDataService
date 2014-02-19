@@ -16,9 +16,7 @@ NSString *const LRLSignalOperationsErrorDomain = @"com.github.lawrencelomax.lrld
 
 - (RACSignal *) lrl_modelByMappingToClass:(Class)clazz {
 	return [self tryMap:^(id value, NSError *__autoreleasing *errorPtr) {
-		NSError *error = nil;
-		value = [MTLJSONAdapter modelOfClass:clazz fromJSONDictionary:value error:&error];
-		return value;
+		return [MTLJSONAdapter modelOfClass:clazz fromJSONDictionary:value error:errorPtr];
 	}];
 }
 

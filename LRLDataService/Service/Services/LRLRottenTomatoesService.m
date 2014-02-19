@@ -41,7 +41,11 @@ NSString *const LRLRottenTomatoesServiceErrorDomain = @"com.github.lawrencelomax
 		}]
 		lrl_checkCorrectClass:NSDictionary.class]
 		try:^BOOL(NSDictionary *dictionary, NSError **errorPtr) {
-			return dictionary[@"error"] == nil;
+			if(dictionary[@"error"]) {
+				*errorPtr = [NSError errorWithDomain:LRLRottenTomatoesServiceErrorDomain code:0 userInfo:@{NSLocalizedDescriptionKey : dictionary[@"error"]}];
+				return NO;
+			}
+			return YES;
 		}]
 		map:^(NSDictionary *dictionary) {
 			return [movie movieWithUpdate:^(LRLMovie *movie) {

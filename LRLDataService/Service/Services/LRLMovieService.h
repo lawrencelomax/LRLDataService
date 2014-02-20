@@ -14,7 +14,7 @@
 @class LRLRottenTomatoesService;
 @class LRLTrailerAddictService;
 @class LRLConfigurationService;
-@class LRLMovie;
+@protocol LRLMovie;
 
 @interface LRLMovieService : NSObject
 
@@ -26,6 +26,6 @@
 @property (nonatomic, readonly) LRLTrailerAddictService *trailerService;
 
 // Gets trailer and rotten tomatoes info
-- (RACSignal *) detailedMovie:(LRLMovie *)movie;
+- (RACSignal *) detailedMovie:(id<LRLMovie>)movie;
 
 @end

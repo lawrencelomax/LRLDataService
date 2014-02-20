@@ -38,7 +38,7 @@
 	return [self serviceWithIMDBService:imdb rottenTomatoesService:rottenTomatoes trailerService:trailerService];
 }
 
-- (RACSignal *) detailedMovie:(LRLMovie *)movie {
+- (RACSignal *) detailedMovie:(id<LRLMovie>)movie {
 	return [[[[[[self.imdbService configuredService]
 		deliverOn:RACScheduler.scheduler]
 		map:^(id _) {
@@ -49,8 +49,8 @@
 					[RACSignal return:nil]
 					//[[[self.trailerService trailerForMovie:movie] startWith:nil] catchTo:RACSignal.empty].logAll
 				]
-			  	reduce:^(LRLMovie *imdbMovie, LRLMovie *rottenTomatoesMovie, LRLTrailer *trailer){
-					return [imdbMovie movieWithUpdate:^(LRLMovie *movie) {
+			  	reduce:^(id<LRLMovie> imdbMovie, id<LRLMovie> rottenTomatoesMovie, LRLTrailer *trailer){
+					return [imdbMovie movieWithUpdate:^(id<LRLMovieMutable> movie) {
 						if(rottenTomatoesMovie) {
 							movie.artworkURL = rottenTomatoesMovie.artworkURL;
 							movie.criticsRating = rottenTomatoesMovie.criticsRating;
@@ -58,7 +58,6 @@
 					  	if(trailer) {
 							movie.trailer = trailer;
 					  	}
-					  	return movie;
 					}];
 				}];
 		}]

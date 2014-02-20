@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class LRLMovie;
+@protocol LRLMovie;
 @class LRLMovieService;
 @class LRLTrailer;
 
@@ -17,7 +17,7 @@
 + (instancetype) viewControllerWithMovieService:(LRLMovieService *)service;
 
 @property (nonatomic, readonly) LRLMovieService *movieService;
-@property (nonatomic, strong) LRLMovie *movie;
+@property (nonatomic, strong) id<LRLMovie> movie;
 
 @property (nonatomic, strong) IBOutlet UIImageView *coverImageView;
 

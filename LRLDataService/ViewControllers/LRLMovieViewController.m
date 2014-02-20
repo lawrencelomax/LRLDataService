@@ -21,7 +21,7 @@
 @interface LRLMovieViewController ()
 
 @property (nonatomic, strong) LRLMovieService *movieService;
-@property (nonatomic, strong) LRLMovie *detailedMovie;
+@property (nonatomic, strong) id<LRLMovie> detailedMovie;
 
 @end
 
@@ -38,7 +38,7 @@
 	
 	@weakify(self)
 	RAC(self, detailedMovie) = [[[RACObserve(self, movie)
-		map:^(LRLMovie *movie) {
+		map:^(id<LRLMovie> movie) {
 			@strongify(self)
 			if(movie) {
 				return [[[[[[[self.movieService
@@ -63,29 +63,29 @@
 		switchToLatest]
 		distinctUntilChanged];
 		
-	RAC(self.trailerButton, enabled) = [RACObserve(self, detailedMovie) map:^(LRLMovie *movie) {
+	RAC(self.trailerButton, enabled) = [RACObserve(self, detailedMovie) map:^(id<LRLMovie> movie) {
 		return @(movie.trailer.link != nil);
 	}];
 	
-	RAC(self, title) = [RACObserve(self, detailedMovie) map:^(LRLMovie *movie) {
+	RAC(self, title) = [RACObserve(self, detailedMovie) map:^(id<LRLMovie> movie) {
 		if(movie) {
 			return [NSString stringWithFormat:@"%@ - (%@)",movie.title, movie.year];
 		}
 		return @"";
 	}];
 	
-	RAC(self.plotLabel, text) = [RACObserve(self, detailedMovie) map:^(LRLMovie *movie) {
+	RAC(self.plotLabel, text) = [RACObserve(self, detailedMovie) map:^(id<LRLMovie> movie) {
 		return movie.plot;
 	}];
 	
-	RAC(self.ratingLabel, text) = [RACObserve(self, detailedMovie) map:^(LRLMovie *movie) {
+	RAC(self.ratingLabel, text) = [RACObserve(self, detailedMovie) map:^(id<LRLMovie> movie) {
 		if(movie.criticsRating) {
 			return [NSString stringWithFormat:@"Rating: %@", movie.criticsRating];
 		}
 		return @"";
 	}];
 	
-	RAC(self.countryLabel, text) = [RACObserve(self, detailedMovie) map:^(LRLMovie *movie) {
+	RAC(self.countryLabel, text) = [RACObserve(self, detailedMovie) map:^(id<LRLMovie> movie) {
 		return movie.country;
 	}];
 	
@@ -95,7 +95,7 @@
 
 - (RACSignal *) coverImageURLSignal {
 	return [RACObserve(self, detailedMovie)
-		map:^(LRLMovie *movie) {
+		map:^(id<LRLMovie> movie) {
 			return movie.artworkURL;
 		}];
 }

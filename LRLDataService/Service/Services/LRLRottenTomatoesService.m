@@ -16,7 +16,7 @@ NSString *const LRLRottenTomatoesServiceErrorDomain = @"com.github.lawrencelomax
 
 @implementation LRLRottenTomatoesService
 
-- (RACSignal *) updatedMovieInfo:(LRLMovie *)movie {
+- (RACSignal *) updatedMovieInfo:(id<LRLMovie>)movie {
 	return [[[[[self mapToURL:^(LRLDataFetcher *fetcher, LRLConfiguration *configuration) {
 			NSError *error = nil;
 			if(!configuration.rottenTomatoesAPIKey) {
@@ -48,14 +48,13 @@ NSString *const LRLRottenTomatoesServiceErrorDomain = @"com.github.lawrencelomax
 			return YES;
 		}]
 		map:^(NSDictionary *dictionary) {
-			return [movie movieWithUpdate:^(LRLMovie *movie) {
+			return [movie movieWithUpdate:^(id<LRLMovieMutable> movie) {
 				movie.criticsRating = dictionary[@"ratings"][@"critics_rating"];
 				NSDictionary *poster = dictionary[@"posters"];
 				NSString *urlString = poster[@"detailed"] ?: poster[@"profile"];
 				if(urlString) {
 					movie.artworkURL = [NSURL URLWithString:urlString];
 				}
-				return movie;
 			}];
 		}]
 		setNameWithFormat:@"updatedMovieInfo"];

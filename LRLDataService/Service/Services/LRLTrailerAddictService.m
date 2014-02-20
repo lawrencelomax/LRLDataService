@@ -16,7 +16,7 @@
 
 @implementation LRLTrailerAddictService
 
-- (RACSignal *) trailerForMovie:(LRLMovie *)movie {
+- (RACSignal *) trailerForMovie:(id<LRLMovie>)movie {
 	return [[[self mapToURL:^(LRLDataFetcher *fetcher, LRLConfiguration *configuration) {
 			NSURL *url = [configuration.trailerAddictEndpoint URLByAppendingQueryDictionary:@{@"imdb" : movie.imdbID }];
 			return [fetcher dataForResourceURL:url];

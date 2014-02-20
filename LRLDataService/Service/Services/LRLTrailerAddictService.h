@@ -9,10 +9,10 @@
 #import "LRLConfiguredDataService.h"
 
 @class LRLTrailer;
-@class LRLMovie;
+@protocol LRLMovie;
 
 @interface LRLTrailerAddictService : LRLConfiguredDataService
 
-- (RACSignal *) trailerForMovie:(LRLMovie *)movie;
+- (RACSignal *) trailerForMovie:(id<LRLMovie>)movie;
 
 @end

@@ -8,32 +8,30 @@
 
 #import "LRLMovie.h"
 
-@interface LRLMovie()
-
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *year;
-@property (nonatomic, strong) NSString *imdbID;
-@property (nonatomic, strong) NSString *type;
-
-@property (nonatomic, strong) NSString *plot;
-@property (nonatomic, strong) NSString *country;
-
-@property (nonatomic, strong) NSString *criticsRating;
-@property (nonatomic, strong) NSURL *artworkURL;
-
-@property (nonatomic, strong) LRLTrailer *trailer;
-
-@end
-
 @implementation LRLMovie
+
+@synthesize title = _title;
+@synthesize year = _year;
+@synthesize imdbID = _imdbID;
+@synthesize type = _type;
+
+@synthesize plot = _plot;
+@synthesize country = _country;
+
+@synthesize criticsRating;
+@synthesize artworkURL = _artworkURL;
+
+@synthesize trailer = _trailer;
+
 
 + (instancetype) movie {
 	return [[LRLMovie alloc] init];
 }
 
-- (LRLMovie *) movieWithUpdate:( LRLMovie *(^)(LRLMovie *movie) )update {
+- (id<LRLMovie>) movieWithUpdate:( void (^)(id<LRLMovieMutable> movieMutable) )update {
 	LRLMovie *movie = [self copy];
-	return update(movie);
+	update(movie);
+	return movie;
 }
 
 + (NSDictionary *) JSONKeyPathsByPropertyKey {

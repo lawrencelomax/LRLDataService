@@ -38,7 +38,7 @@
     [super viewDidLoad];
 	
 	self.dataSource = [LRLComposedTableViewDataSource dataSourceForTableView:self.tableView];
-	self.dataSource.cellConfiguration = ^(LRLMovie *movie, UITableViewCell *cell) {
+	self.dataSource.cellConfiguration = ^(id<LRLMovie> movie, UITableViewCell *cell) {
 		cell.textLabel.text = movie.title;
 		cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", movie.type, movie.imdbID];
 	};
@@ -58,7 +58,7 @@
 
 - (RACSignal *) presentation {
 	@weakify(self)
-	return [self.dataSource.cellPressed map:^(LRLMovie *movie) {
+	return [self.dataSource.cellPressed map:^(id<LRLMovie> movie) {
 		@strongify(self)
 		LRLMovieViewController *viewController = [LRLMovieViewController viewControllerWithMovieService:self.service];
 		viewController.movie = movie;

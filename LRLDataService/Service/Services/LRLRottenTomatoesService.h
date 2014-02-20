@@ -8,12 +8,12 @@
 
 #import "LRLConfiguredDataService.h"
 
-@class LRLMovie;
+@protocol LRLMovie;
 
 extern NSString *const LRLRottenTomatoesServiceErrorDomain;
 
 @interface LRLRottenTomatoesService : LRLConfiguredDataService
 
-- (RACSignal *) updatedMovieInfo:(LRLMovie *)movie;
+- (RACSignal *) updatedMovieInfo:(id<LRLMovie>)movie;
 
 @end

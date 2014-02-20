@@ -9,8 +9,10 @@
 #import "LRLBaseModel.h"
 
 @class LRLTrailer;
+@class LRLMovie;
+@protocol LRLMovieMutable;
 
-@interface LRLMovie : LRLBaseModel
+@protocol LRLMovie <NSObject>
 
 + (instancetype) movie;
 
@@ -31,11 +33,11 @@
 // From Trailer Addict
 @property (nonatomic, readonly) LRLTrailer *trailer;
 
-- (LRLMovie *) movieWithUpdate:( LRLMovie *(^)(LRLMovie *movie) )update;
+- (id<LRLMovie>) movieWithUpdate:( void (^)(id<LRLMovieMutable> movieMutable) )update;
 
 @end
 
-@interface LRLMovie (ProtectedSetters)
+@protocol LRLMovieMutable <NSObject>
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *year;
@@ -49,5 +51,10 @@
 @property (nonatomic, strong) NSURL *artworkURL;
 
 @property (nonatomic, strong) LRLTrailer *trailer;
+
+@end
+
+@interface LRLMovie : LRLBaseModel <LRLMovie, LRLMovieMutable>
+
 
 @end

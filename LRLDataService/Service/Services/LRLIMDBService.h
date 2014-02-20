@@ -8,13 +8,13 @@
 
 #import "LRLConfiguredDataService.h"
 
-@class LRLMovie;
+@protocol LRLMovie;
 
 extern NSString *const LRLIMDBServiceErrorDomain;
 
 @interface LRLIMDBService : LRLConfiguredDataService
 
 - (RACSignal *) moviesWithSearch:(NSString *)search;
-- (RACSignal *) detailedMovie:(LRLMovie *)movie;
+- (RACSignal *) detailedMovie:(id<LRLMovie>)movie;
 
 @end

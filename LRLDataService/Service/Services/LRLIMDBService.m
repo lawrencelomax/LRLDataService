@@ -38,7 +38,7 @@ NSString *const LRLIMDBServiceErrorDomain = @"com.github.lawrencelomax.lrldatase
 }
 
 
-- (RACSignal *) detailedMovie:(LRLMovie *)movie {
+- (RACSignal *) detailedMovie:(id<LRLMovie>)movie {
 	return [[[[self
 		mapToURL:^(LRLDataFetcher *fetcher, LRLConfiguration *configuration) {
 			NSError *error = nil;

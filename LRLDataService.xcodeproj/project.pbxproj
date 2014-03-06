@@ -37,8 +37,9 @@
 		21BC38A718AA49F600EA9215 /* LRLIMDBService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC389D18AA49F600EA9215 /* LRLIMDBService.m */; };
 		21BC38AB18AA4A1500EA9215 /* LRLMovieService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC38AA18AA4A1500EA9215 /* LRLMovieService.m */; };
 		21BC38AE18AA4B7000EA9215 /* LRLMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BC38AD18AA4B7000EA9215 /* LRLMovie.m */; };
+		21BD269718BDD94E00810C04 /* LRLComposedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BD269618BDD94E00810C04 /* LRLComposedTableViewDataSource.m */; };
+		21BD269A18BDD99600810C04 /* LRLMovieViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BD269918BDD99600810C04 /* LRLMovieViewModel.m */; };
 		21D85B9818AF279900A3279D /* RACSignal+LRLOperatons.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85B9718AF279900A3279D /* RACSignal+LRLOperatons.m */; };
-		21D85BA018AF2F4B00A3279D /* LRLComposedTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85B9F18AF2F4B00A3279D /* LRLComposedTableViewDataSource.m */; };
 		21D85BA418AF746D00A3279D /* LRLMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85BA218AF746D00A3279D /* LRLMovieViewController.m */; };
 		21D85BA518AF746D00A3279D /* LRLMovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D85BA318AF746D00A3279D /* LRLMovieViewController.xib */; };
 		21D85BA818B02D0E00A3279D /* LRLTrailerAddictService.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D85BA718B02D0E00A3279D /* LRLTrailerAddictService.m */; };
@@ -111,10 +112,13 @@
 		21BC38AA18AA4A1500EA9215 /* LRLMovieService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovieService.m; sourceTree = "<group>"; };
 		21BC38AC18AA4B7000EA9215 /* LRLMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovie.h; sourceTree = "<group>"; };
 		21BC38AD18AA4B7000EA9215 /* LRLMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovie.m; sourceTree = "<group>"; };
+		21BD269518BDD94E00810C04 /* LRLComposedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLComposedTableViewDataSource.h; sourceTree = "<group>"; };
+		21BD269618BDD94E00810C04 /* LRLComposedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLComposedTableViewDataSource.m; sourceTree = "<group>"; };
+		21BD269818BDD99600810C04 /* LRLMovieViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovieViewModel.h; sourceTree = "<group>"; };
+		21BD269918BDD99600810C04 /* LRLMovieViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovieViewModel.m; sourceTree = "<group>"; };
+		21C3437E18C80D8C002552A2 /* LRLViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LRLViewModel.h; sourceTree = "<group>"; };
 		21D85B9618AF279900A3279D /* RACSignal+LRLOperatons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSignal+LRLOperatons.h"; sourceTree = "<group>"; };
 		21D85B9718AF279900A3279D /* RACSignal+LRLOperatons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+LRLOperatons.m"; sourceTree = "<group>"; };
-		21D85B9E18AF2F4B00A3279D /* LRLComposedTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLComposedTableViewDataSource.h; sourceTree = "<group>"; };
-		21D85B9F18AF2F4B00A3279D /* LRLComposedTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLComposedTableViewDataSource.m; sourceTree = "<group>"; };
 		21D85BA118AF746D00A3279D /* LRLMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRLMovieViewController.h; sourceTree = "<group>"; };
 		21D85BA218AF746D00A3279D /* LRLMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRLMovieViewController.m; sourceTree = "<group>"; };
 		21D85BA318AF746D00A3279D /* LRLMovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRLMovieViewController.xib; sourceTree = "<group>"; };
@@ -197,7 +201,7 @@
 				2151264818AF155800734D08 /* RAC */,
 				21ABD34C18A8DB81002C15DA /* Resources */,
 				21BC388A18AA49F600EA9215 /* Service */,
-				21D85B9D18AF2F4100A3279D /* ViewConfiguration */,
+				21BD269418BDD94E00810C04 /* ViewModels */,
 				21421606189A59BD0036767C /* Supporting Files */,
 				2142163D189AFD2E0036767C /* ViewControllers */,
 			);
@@ -345,13 +349,17 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		21D85B9D18AF2F4100A3279D /* ViewConfiguration */ = {
+		21BD269418BDD94E00810C04 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				21D85B9E18AF2F4B00A3279D /* LRLComposedTableViewDataSource.h */,
-				21D85B9F18AF2F4B00A3279D /* LRLComposedTableViewDataSource.m */,
+				21BD269518BDD94E00810C04 /* LRLComposedTableViewDataSource.h */,
+				21BD269618BDD94E00810C04 /* LRLComposedTableViewDataSource.m */,
+				21BD269818BDD99600810C04 /* LRLMovieViewModel.h */,
+				21BD269918BDD99600810C04 /* LRLMovieViewModel.m */,
+				21C3437E18C80D8C002552A2 /* LRLViewModel.h */,
 			);
-			path = ViewConfiguration;
+			name = ViewModels;
+			path = Service/ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -521,6 +529,7 @@
 			files = (
 				21BC38A118AA49F600EA9215 /* LRLDataService.m in Sources */,
 				21ABD34718A8D295002C15DA /* LRLKeyValueInterchange.m in Sources */,
+				21BD269718BDD94E00810C04 /* LRLComposedTableViewDataSource.m in Sources */,
 				21D85BA818B02D0E00A3279D /* LRLTrailerAddictService.m in Sources */,
 				21421641189AFD2E0036767C /* LRLMovieListViewController.m in Sources */,
 				211D9A6C18B22EC800D97C95 /* LRLResponseSerializer.m in Sources */,
@@ -539,10 +548,10 @@
 				21BC38A318AA49F600EA9215 /* LRLHTTPDataProvider.m in Sources */,
 				21BC38A218AA49F600EA9215 /* LRLFileStorageDataProvider.m in Sources */,
 				21421640189AFD2E0036767C /* LRLAppDelegate.m in Sources */,
+				21BD269A18BDD99600810C04 /* LRLMovieViewModel.m in Sources */,
 				21D85BAB18B05D3300A3279D /* LRLTrailer.m in Sources */,
 				21BC38A518AA49F600EA9215 /* LRLConfigurationService.m in Sources */,
 				21D85B9818AF279900A3279D /* RACSignal+LRLOperatons.m in Sources */,
-				21D85BA018AF2F4B00A3279D /* LRLComposedTableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

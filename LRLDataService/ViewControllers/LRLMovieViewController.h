@@ -9,15 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @class LRLMovie;
-@class LRLMovieService;
+@class LRLMovieViewModel;
 @class LRLTrailer;
 
 @interface LRLMovieViewController : UIViewController
 
-+ (instancetype) viewControllerWithMovieService:(LRLMovieService *)service;
++ (instancetype) viewControllerWithViewModel:(LRLMovieViewModel *)viewModel;
 
-@property (nonatomic, readonly) LRLMovieService *movieService;
-@property (nonatomic, strong) LRLMovie *movie;
+@property (nonatomic, readonly) LRLMovieViewModel *movieViewModel;
 
 @property (nonatomic, strong) IBOutlet UIImageView *coverImageView;
 

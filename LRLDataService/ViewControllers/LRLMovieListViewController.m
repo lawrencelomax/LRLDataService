@@ -12,6 +12,7 @@
 #import "LRLMovieService.h"
 #import "LRLComposedTableViewDataSource.h"
 #import "LRLMovieViewController.h"
+#import "LRLMovieViewModel.h"
 #import "LRLIMDBService.h"
 
 #import <SVProgressHUD/SVProgressHUD.h>
@@ -60,8 +61,9 @@
 	@weakify(self)
 	return [self.dataSource.cellPressed map:^(LRLMovie *movie) {
 		@strongify(self)
-		LRLMovieViewController *viewController = [LRLMovieViewController viewControllerWithMovieService:self.service];
-		viewController.movie = movie;
+		LRLMovieViewModel *viewModel = [LRLMovieViewModel viewModelWithService:self.service];
+		[viewModel configureWithMovie:movie];
+		LRLMovieViewController *viewController = [LRLMovieViewController viewControllerWithViewModel:viewModel];
 		return viewController;
 	}];
 }
